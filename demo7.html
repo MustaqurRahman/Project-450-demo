@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wvscanner scan report</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/kube.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+</head>
+<body>
+    <div id="page">
+        <header style="text-align: center">
+        <h2 class="title" style="text-align: center">wvscanner vulnerability report</h2>
+        <h3>Target: http://testphp.vulnweb.com/</h3>
+        <p>Date of the scan: Mon, 06 Mar 2023 03:04:58 +0000. Scope of the scan: folder. Crawled pages: 76</p>
+        </header>
+        <hr />
+
+        <h4>Summary</h4>
+        <table class="width-100 hovered" style="background: url('logo_clear.png') no-repeat center;">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Number of vulnerabilities found</th>
+                </tr>
+            </thead>
+            <tbody id="summary">
+                    <tr>
+                        <td class="small">
+                            Backup file
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Weak credentials
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Content Security Policy Configuration
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Cross Site Request Forgery
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Path Traversal
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Fingerprint web application framework
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Fingerprint web server
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Htaccess Bypass
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HTTP Secure Headers
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HttpOnly Flag cookie
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_10">Reflected Cross Site Scripting</a>
+                            <!-- <a href="#vuln_type_18">Reflected Cross Site Scripting</a> -->
+                        </td>
+                        <td class="small .text-centered">3</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Secure Flag cookie
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            SQL Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Stored Cross Site Scripting
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Subdomain takeover
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Blind SQL Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Internal Server Error
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Resource consumption
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Fingerprint web technology
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HTTP Methods
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+            </tbody>
+        </table>
+        <hr />
+        <div id="details">
+                <h3 id="vuln_type_10">Reflected Cross Site Scripting</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications which allow code injection by malicious web users into the web pages viewed by other users. Examples of such code include HTML code and client-side scripts.</dd>
+                </dl>
+
+                        <h4>🟠 Vulnerability found in /hpp/</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-0-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-10-0-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter pp</pre>
+                        </section>
+                        <section id="tab-vuln-10-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET /hpp/?pp=%22%3E%3C%2Fa%3E%3CScRiPt%3Ealert%28%27wfb2yk0wij%27%29%3C%2FsCrIpT%3E HTTP/1.1
+                                    <br>
+                                    host: testphp.vulnweb.com
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-10-0-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://testphp.vulnweb.com/hpp/?pp=%22%3E%3C%2Fa%3E%3CScRiPt%3Ealert%28%27wfb2yk0wij%27%29%3C%2FsCrIpT%3E&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-10-0-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INPV-01&#39;]</pre>
+                        </section>
+                        <h4>🟠 Vulnerability found in /hpp/params.php</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-1-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-1-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-10-1-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter p</pre>
+                        </section>
+                        <section id="tab-vuln-10-1-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET /hpp/params.php?p=%3CScRiPt%3Ealert%28%27wjiatlpn33%27%29%3C%2FsCrIpT%3E&amp;pp=12 HTTP/1.1
+                                    <br>
+                                    host: testphp.vulnweb.com
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-10-1-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://testphp.vulnweb.com/hpp/params.php?p=%3CScRiPt%3Ealert%28%27wjiatlpn33%27%29%3C%2FsCrIpT%3E&amp;pp=12&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-10-1-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INPV-01&#39;]</pre>
+                        </section>
+                        <h4>🟠 Vulnerability found in /hpp/params.php</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-10-2-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-10-2-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-10-2-1" style="min-height: 124px;">
+                            <pre>XSS vulnerability found via injection in the parameter pp</pre>
+                        </section>
+                        <section id="tab-vuln-10-2-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET /hpp/params.php?p=valid&amp;pp=%3CScRiPt%3Ealert%28%27wocnqf34r6%27%29%3C%2FsCrIpT%3E HTTP/1.1
+                                    <br>
+                                    host: testphp.vulnweb.com
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-10-2-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://testphp.vulnweb.com/hpp/params.php?p=valid&amp;pp=%3CScRiPt%3Ealert%28%27wocnqf34r6%27%29%3C%2FsCrIpT%3E&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-10-2-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INPV-01&#39;]</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:<, >, &, ', (, ), #, %, ; , +, -</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-community/attacks/xss/">OWASP: Cross Site Scripting (XSS)</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Cross-site_scripting">Wikipedia: Cross-site scripting</a></li>
+                    <li><a href="https://cwe.mitre.org/data/definitions/79.html">CWE-79: Improper Neutralization of Input During Web Page Generation (&#39;Cross-site Scripting&#39;)</a></li>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting">OWASP: Reflected Cross Site Scripting</a></li>
+                </ul>
+                <br />
+                <hr>
+        </div>
+        
+	</div>
+    <script type="text/javascript" src="js/kube.min.js"></script>
+    <script>$K.init();</script>
+</body>
+</html>
