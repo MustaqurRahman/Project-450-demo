@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wvscanner scan report</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/kube.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+</head>
+<body>
+    <div id="page">
+        <header style="text-align: center">
+        <h2 class="title" style="text-align: center">wvscanner vulnerability report</h2>
+        <h3>Target: http://www.sust.edu/</h3>
+        <p>Date of the scan: Sun, 05 Mar 2023 11:51:42 +0000. Scope of the scan: folder. Crawled pages: 1</p>
+        </header>
+        <hr />
+
+        <h4>Summary</h4>
+        <table class="width-100 hovered" style="background: url('logo_clear.png') no-repeat center;">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Number of vulnerabilities found</th>
+                </tr>
+            </thead>
+            <tbody id="summary">
+                    <tr>
+                        <td class="small">
+                            Backup file
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Weak credentials
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            CRLF Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_3">Content Security Policy Configuration</a>
+                        </td>
+                        <td class="small .text-centered">1</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Cross Site Request Forgery
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Potentially dangerous file
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Command execution
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Path Traversal
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_8">Fingerprint web application framework</a>
+                        </td>
+                        <td class="small .text-centered">3</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_9">Fingerprint web server</a>
+                        </td>
+                        <td class="small .text-centered">1</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Htaccess Bypass
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HTTP Secure Headers
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HttpOnly Flag cookie
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Log4Shell
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Open Redirect
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Reflected Cross Site Scripting
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_16">Secure Flag cookie</a>
+                        </td>
+                        <td class="small .text-centered">1</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            SQL Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            TLS/SSL misconfigurations
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Server Side Request Forgery
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Stored Cross Site Scripting
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Subdomain takeover
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Blind SQL Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            XML External Entity
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Internal Server Error
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Resource consumption
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#addition_type_0">Fingerprint web technology</a>
+                        </td>
+                        <td class="small .text-centered">11</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HTTP Methods
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+            </tbody>
+        </table>
+        <hr />
+        <div id="details">
+                <h3 id="vuln_type_3">Content Security Policy Configuration</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks.</dd>
+                </dl>
+
+                        <h4>🟡 Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-3-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-3-0-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-3-0-1" style="min-height: 124px;">
+                            <pre>CSP is not set</pre>
+                        </section>
+                        <section id="tab-vuln-3-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                                    host: www.sust.edu
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                                    cookie: ci_session=cfae61e17b9689aa05a60b6595b268bf53d1a938
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-3-0-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-3-0-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-CONF-12&#39;, &#39;OSHP-Content-Security-Policy&#39;]</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>Configuring Content Security Policy involves adding the Content-Security-Policy HTTP header to a web page and giving it values to control what resources the user agent is allowed to load for that page.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Mozilla: Content Security Policy (CSP)</a></li>
+                    <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">OWASP: Content Security Policy Cheat Sheet</a></li>
+                    <li><a href="https://owasp.org/www-pdf-archive/2019-02-22_-_How_do_I_Content_Security_Policy_-_Print.pdf">OWASP: How to do Content Security Policy (PDF)</a></li>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy">OWASP: Content Security Policy</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_8">Fingerprint web application framework</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>The version of a web application framework can be identified due to the presence of its specific fingerprints.</dd>
+                </dl>
+
+                        <h4>INFO Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-8-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-8-0-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-8-0-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;jQuery&#34;, &#34;versions&#34;: [&#34;1.8.2&#34;], &#34;categories&#34;: [&#34;JavaScript libraries&#34;], &#34;groups&#34;: [&#34;Web development&#34;]}</pre>
+                        </section>
+                        <section id="tab-vuln-8-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-8-0-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-8-0-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-8-1-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-8-1-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-8-1-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;OpenSSL&#34;, &#34;versions&#34;: [&#34;1.0.2k&#34;], &#34;categories&#34;: [&#34;Web server extensions&#34;], &#34;groups&#34;: [&#34;Servers&#34;]}</pre>
+                        </section>
+                        <section id="tab-vuln-8-1-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-8-1-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-8-1-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-8-2-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-8-2-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-8-2-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;PHP&#34;, &#34;versions&#34;: [&#34;5.4.16&#34;], &#34;categories&#34;: [&#34;Programming languages&#34;], &#34;groups&#34;: [&#34;Web development&#34;]}</pre>
+                        </section>
+                        <section id="tab-vuln-8-2-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-8-2-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-8-2-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>This is only for informational purposes.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework.html">OWASP: Fingerprint Web Application Framework</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_9">Fingerprint web server</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>The version of a web server can be identified due to the presence of its specific fingerprints.</dd>
+                </dl>
+
+                        <h4>INFO Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-9-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-9-0-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-9-0-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;Apache&#34;, &#34;versions&#34;: [&#34;2.4.6&#34;], &#34;categories&#34;: [&#34;Web servers&#34;], &#34;groups&#34;: [&#34;Servers&#34;]}</pre>
+                        </section>
+                        <section id="tab-vuln-9-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-9-0-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-9-0-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;]</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>This is only for informational purposes.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server.html">OWASP: Fingerprint Web Server</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_16">Secure Flag cookie</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>The secure flag is an option that can be set by the application server when sending a new cookie to the user within an HTTP Response. The purpose of the secure flag is to prevent cookies from being observed by unauthorized parties due to the transmission of a the cookie in clear text.</dd>
+                </dl>
+
+                        <h4>🟡 Vulnerability found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-vuln-16-0-1" class="is-active">Description</a>
+                            <a href="#tab-vuln-16-0-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-vuln-16-0-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : ci_session</pre>
+                        </section>
+                        <section id="tab-vuln-16-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                                    host: www.sust.edu
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-16-0-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-16-0-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-SESS-02&#39;]</pre>
+                        </section>
+
+                <dl><dt>Solutions</dt><dd>When generating the cookie, make sure to set the Secure Flag to True.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">OWASP: Testing for Cookies Attributes</a></li>
+                    <li><a href="https://owasp.org/www-community/controls/SecureCookieAttribute">OWASP: Secure Cookie Attribute</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="addition_type_0">Fingerprint web technology</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>The use of a web technology can be deducted due to the presence of its specific fingerprints.</dd>
+                </dl>
+
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-0-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-0-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-0-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;Apache&#34;, &#34;versions&#34;: [&#34;2.4.6&#34;], &#34;categories&#34;: [&#34;Web servers&#34;], &#34;groups&#34;: [&#34;Servers&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-0-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-0-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-0-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-1-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-1-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-1-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;Bootstrap&#34;, &#34;versions&#34;: [], &#34;categories&#34;: [&#34;UI frameworks&#34;], &#34;groups&#34;: [&#34;Web development&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-1-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-1-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-1-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-2-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-2-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-2-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;CentOS&#34;, &#34;versions&#34;: [], &#34;categories&#34;: [&#34;Operating systems&#34;], &#34;groups&#34;: [&#34;Servers&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-2-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-2-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-2-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-3-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-3-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-3-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;FlexSlider&#34;, &#34;versions&#34;: [], &#34;categories&#34;: [&#34;Widgets&#34;], &#34;groups&#34;: [&#34;Other&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-3-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-3-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-3-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-4-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-4-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-4-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;Font Awesome&#34;, &#34;versions&#34;: [], &#34;categories&#34;: [&#34;Font scripts&#34;], &#34;groups&#34;: [&#34;Web development&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-4-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-4-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-4-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-5-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-5-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-5-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;jQuery&#34;, &#34;versions&#34;: [&#34;1.8.2&#34;], &#34;categories&#34;: [&#34;JavaScript libraries&#34;], &#34;groups&#34;: [&#34;Web development&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-5-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-5-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-5-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-6-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-6-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-6-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;jQuery CDN&#34;, &#34;versions&#34;: [], &#34;categories&#34;: [&#34;CDN&#34;], &#34;groups&#34;: [&#34;Servers&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-6-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-6-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-6-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-7-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-7-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-7-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;Modernizr&#34;, &#34;versions&#34;: [], &#34;categories&#34;: [&#34;JavaScript libraries&#34;], &#34;groups&#34;: [&#34;Web development&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-7-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-7-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-7-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-8-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-8-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-8-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;OpenSSL&#34;, &#34;versions&#34;: [&#34;1.0.2k&#34;], &#34;categories&#34;: [&#34;Web server extensions&#34;], &#34;groups&#34;: [&#34;Servers&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-8-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-8-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-8-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-9-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-9-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-9-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;PHP&#34;, &#34;versions&#34;: [&#34;5.4.16&#34;], &#34;categories&#34;: [&#34;Programming languages&#34;], &#34;groups&#34;: [&#34;Web development&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-9-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-9-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-9-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                        <h4>INFO Additional found in /</h4>
+                        <nav class="tabs" data-kube="tabs" data-equal="true" data-height="equal">
+                            <a href="#tab-addition-0-10-1" class="is-active">Description</a>
+                            <a href="#tab-addition-0-10-2">HTTP Request</a>
+                        </nav>
+                        <section id="tab-addition-0-10-1" style="min-height: 124px;">
+                            <pre>{&#34;name&#34;: &#34;prettyPhoto&#34;, &#34;versions&#34;: [], &#34;categories&#34;: [&#34;JavaScript libraries&#34;], &#34;groups&#34;: [&#34;Web development&#34;]}</pre>
+                        </section>
+                        <section id="tab-addition-0-10-2" style="min-height: 124px;" class="is-hidden">
+                            <pre style="white-space: normal">
+                                    GET / HTTP/1.1
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-addition-0-10-4" style="min-height: 124px;" class="is-hidden">
+                            <pre>curl &#34;http://www.sust.edu/&#34;</pre>
+                        </section>
+                        <section id="tab-addition-0-10-5" style="min-height: 124px;" class="is-hidden">
+                            <pre>[&#39;WSTG-INFO-02&#39;, &#39;WSTG-INFO-08&#39;]</pre>
+                        </section>
+                <dl><dt>Solutions</dt><dd>This is only for informational purposes.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server.html">OWASP: Fingerprint Web Server</a></li>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework.html">OWASP: Fingerprint Web Application Framework</a></li>
+                </ul>
+                <br />
+                <hr>
+        </div>
+        
+	</div>
+    <script type="text/javascript" src="js/kube.min.js"></script>
+    <script>$K.init();</script>
+</body>
+</html>
